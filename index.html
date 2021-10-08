@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMBEDDING IMAGES AND VIDEO</title>
+
+    <style>
+        .container {
+            /* border: 2px solid red; */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+        }
+
+        .video-side {
+            display: flex;
+        }
+
+        .video-section {
+            /* border: 2px solid green; */
+            width: 960px;
+            height: 615px;
+            margin: 60px 50px 20px 90px;
+        }
+
+        .side-bar {
+            border: 2px solid black;
+            margin: 60px 0 20px 0;
+            height: 100vh;
+            width: 500px;
+        }
+
+        .title-view {
+            /* border: 2px solid red; */
+            width: 960px;
+            margin: -260px 0 0 90px;
+        }
+
+        .title-view h4 {
+            margin: 40px 0 20px 60px;
+            width: 600px;
+            font-weight: lighter;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="video-side">
+            <div class="video-section">
+                <iframe width="960" height="615" src="https://www.youtube.com/embed/V74l_zS1x8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class="side-bar">
+                <p>This is side bar element</p>
+            </div>
+        </div>
+
+        <div class="title-view">
+            <h3>Contributing to Open Source Part I: The Easy Way</h3>
+            
+            <p>64,296 views * Feb 28, 2014</p>
+
+            <h4>How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at http://theodinproject.com.</h4>
+        </div>
+        
+    </div>
+
+</body>
+</html>
